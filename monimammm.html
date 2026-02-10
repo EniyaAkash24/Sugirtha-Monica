@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugirtha Monica | HR Manager Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html,body{height:100%;scroll-behavior:smooth}
+
+body{
+background:linear-gradient(135deg,#ff8fcf,#ffd1ea,#fff3f9);
+color:#333;
+}
+
+/* FLOATING SOCIAL BUTTONS */
+.social{
+position:fixed;
+left:20px;
+top:50%;
+transform:translateY(-50%);
+display:flex;
+flex-direction:column;
+gap:14px;
+z-index:1000;
+}
+.social a{
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:22px;
+box-shadow:0 0 18px rgba(0,0,0,0.25);
+transition:.3s;
+text-decoration:none;
+}
+.social a:hover{transform:scale(1.15)}
+.social .mail{background:#ff3f98}
+.social .linkedin{background:#0077b5}
+
+/* NAV DOTS */
+.nav{
+position:fixed;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+display:flex;
+flex-direction:column;
+gap:14px;
+z-index:100;
+}
+.nav a{
+width:14px;
+height:14px;
+border-radius:50%;
+background:#ff9acb;
+display:block;
+}
+.nav a:hover{background:#ff3f98}
+
+/* SECTIONS */
+section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 10%;
+}
+
+/* PANEL */
+.panel{
+width:100%;
+max-width:1200px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(20px);
+border-radius:40px;
+padding:70px;
+box-shadow:0 30px 80px rgba(0,0,0,0.25);
+animation:fadeUp .8s ease;
+}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* TEXT */
+h1{font-size:64px;color:#ff3f98}
+h2{font-size:30px;margin-top:10px;color:#555}
+h3{font-size:34px;color:#ff3f98;margin-bottom:25px}
+p{font-size:22px;line-height:1.8;max-width:1000px}
+.quote{font-size:26px;font-style:italic;margin-top:30px;color:#444}
+
+/* BUTTON */
+.btn{
+margin-top:30px;
+padding:16px 36px;
+border-radius:30px;
+border:none;
+background:#ff3f98;
+color:#fff;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+.btn:hover{transform:scale(1.06)}
+
+/* LINKEDIN GLOW BUTTON */
+.linkedin-btn{
+background:#0077b5;
+display:inline-flex;
+align-items:center;
+gap:12px;
+box-shadow:0 0 15px #0077b5, 0 0 30px #0077b5;
+}
+.linkedin-btn i{font-size:22px}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.panel{padding:40px}
+h1{font-size:42px}
+h3{font-size:26px}
+p,.quote{font-size:18px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING SOCIAL -->
+<div class="social">
+<a href="mailto:sugirtha.monica@gove.co" class="mail" title="Email">
+<i class="fa fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/sugirtha-monica-16a35529a/" target="_blank" class="linkedin" title="LinkedIn">
+<i class="fab fa-linkedin-in"></i>
+</a>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+<a href="#home"></a>
+<a href="#about"></a>
+<a href="#experience"></a>
+<a href="#skills"></a>
+<a href="#contact"></a>
+</div>
+
+<!-- HOME -->
+<section id="home">
+<div class="panel">
+<h1>Sugirtha Monica</h1>
+<h2>HR Manager </h2>
+<div class="quote" id="quote"></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="panel">
+<h3>Professional Bio</h3>
+<p>
+Sugirtha Monica is a dedicated HR Manager focused on building strong organizational culture,
+enhancing employee engagement, and driving business success through people-first strategies.
+</p>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="panel">
+<h3>Experience</h3>
+<p>
+<b>HR Manager – Gove</b><br>
+Nov 22, 2023 – Present<br><br>
+Managing recruitment, HR operations, employee engagement initiatives, payroll coordination,
+and workforce development to support organizational growth.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="panel">
+<h3>Core HR Skills</h3>
+<p>
+Talent Acquisition • HR Operations • Employee Engagement • Payroll • Performance Management •
+HR Analytics • Policy Management • Workforce Planning
+</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="panel">
+<h3>Contact</h3>
+<p>
+Email: sugirtha.monica@gove.co<br>
+Company: https://gove.co/
+</p>
+
+<a href="mailto:sugirtha.monica@gove.co">
+<button class="btn">Send Email</button>
+</a>
+
+<br><br>
+
+<a href="https://www.linkedin.com/in/sugirtha-monica-16a35529a/" target="_blank">
+<button class="btn linkedin-btn">
+<i class="fab fa-linkedin"></i> LinkedIn Profile
+</button>
+</a>
+
+</div>
+</section>
+
+<script>
+const quotes=[
+"Human resources isn’t a thing we do. It’s the thing that runs our business. – Steve Wynn",
+"Train people well enough so they can leave. Treat them well enough so they don’t want to. – Richard Branson",
+"To win in the marketplace, you must first win in the workplace. – Doug Conant",
+"The most important assets of a company are its people. – Jorge Paulo Lemann",
+"Culture is not just one aspect of the game, it is the game. – Louis Gerstner"
+];
+document.getElementById("quote").innerText =
+quotes[Math.floor(Math.random()*quotes.length)];
+</script>
+
+</body>
+</html>
